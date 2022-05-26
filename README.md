@@ -1,2 +1,1 @@
-# Learning_theory-
-学习408理论
+# Let's study together
