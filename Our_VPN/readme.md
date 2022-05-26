@@ -5,7 +5,7 @@ ikuuu  clash
 
 
 ### 探索者 ：
-探索者 clash 
+探索者 clash  
 官方网站：https://www.cryxr.xyz/#/login    
 账号 ： 1147860941@qq.com  
 密码：QQ1147860941 
