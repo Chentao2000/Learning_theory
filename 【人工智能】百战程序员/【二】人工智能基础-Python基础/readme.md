@@ -2,6 +2,9 @@
 
 ![b6581b7aa7df953a040ab8d38a1bd5d](https://user-images.githubusercontent.com/68007558/170802441-953e3878-1bd7-4103-a292-ce006dc4f0dc.png)
 
+### 安装 jupyter notebook 时候一定要确认是 Ano... 的cmd 而且 一定要管理员方式：
+
+![1653698871(1)](https://user-images.githubusercontent.com/68007558/170803192-7aa8c07c-c417-4b9a-8858-0d25dda03fce.png)
 
 ----
 ### 实操作业 1：
