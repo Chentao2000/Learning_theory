@@ -5,6 +5,9 @@
 ### 安装 jupyter notebook 时候一定要确认是 Ano... 的cmd 而且 一定要管理员方式：
 
 ![1653698871(1)](https://user-images.githubusercontent.com/68007558/170803192-7aa8c07c-c417-4b9a-8858-0d25dda03fce.png)
+### 在使用的时候 conda - cmd  不能关闭 ，关闭jupyter notebook 就报错：
+
+![image](https://user-images.githubusercontent.com/68007558/170803316-44e7ef58-4e46-4639-975d-652d8559d49b.png)
 
 ----
 ### 实操作业 1：
