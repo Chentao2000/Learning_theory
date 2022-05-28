@@ -7,9 +7,17 @@
 ![1653698871(1)](https://user-images.githubusercontent.com/68007558/170803192-7aa8c07c-c417-4b9a-8858-0d25dda03fce.png)
 ### 在使用的时候 conda - cmd  不能关闭 ，关闭jupyter notebook 就报错：
 
+
 ![image](https://user-images.githubusercontent.com/68007558/170803316-44e7ef58-4e46-4639-975d-652d8559d49b.png)
 
 ----
+### jupyter notebook 快捷键 
+- （我觉得唯一有用的快捷键应该是 ）
+```
+shift + enter  //执行
+```
+
+
 ### 实操作业 1：
 
 ![1653698396(1)](https://user-images.githubusercontent.com/68007558/170802915-a20eaa38-cbc2-4c79-9151-ac781d32b8be.png)
