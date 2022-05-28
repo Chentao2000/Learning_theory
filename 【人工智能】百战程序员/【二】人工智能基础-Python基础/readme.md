@@ -16,6 +16,25 @@
 ```
 shift + enter  //执行
 ```
+### 关于conda 怎么使用虚拟环境 jupyter notebook：
+首先在激活虚拟环境中安装 ipykernel    
+```
+pip install ipykernel
+```
+然后给虚拟环境一个命名     
+```
+python -m ipykernel install --user --name 环境名称 --display-name 在jupyter中想要显示的环境名称
+```
+如下：
+```
+python -m ipykernel install --user --name my_first_env --display-name first_env
+```
+![1653702585(1)](https://user-images.githubusercontent.com/68007558/170805086-03a5fe93-8f99-4fea-bc0c-72ec1d293607.jpg)       
+ 
+ ![1653702611(1)](https://user-images.githubusercontent.com/68007558/170805097-291adf2e-f76d-425b-8623-90fec74149bd.png)      
+
+
+  
 
 
 ### 实操作业 1：
