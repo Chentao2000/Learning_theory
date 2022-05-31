@@ -33,8 +33,12 @@ python -m ipykernel install --user --name my_first_env --display-name first_env
  
  ![1653702611(1)](https://user-images.githubusercontent.com/68007558/170805097-291adf2e-f76d-425b-8623-90fec74149bd.png)      
 
+## 报错！：
+运行jupyter notebok 报错 ：
+![)} $`}6Q%V~$57}ABO6TGLN](https://user-images.githubusercontent.com/68007558/171165828-41c41a2c-455a-45c3-80b5-504b9b3740fe.jpg) 
 
-  
+解决方法：
+https://blog.csdn.net/weixin_43846562/article/details/115428893?spm=1001.2014.3001.5502
 
 
 ### 实操作业 1：
