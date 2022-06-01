@@ -3,5 +3,6 @@
 2. 每次递归调用后越来越接近这个限制条件
 
 递归思路总结：
-![3711126fcc7aa276f9435a1227fdcc6](https://user-images.githubusercontent.com/98099819/171429850-c8eded46-d4dd-4430-942b-4304de8bb6c9.png)
-![f04b5b8fac075d8daf2b545d7ad6472](https://user-images.githubusercontent.com/98099819/171429746-b43f9026-a0c2-485b-b453-d3c8d80e631b.png)
+
+![ccc9c8e9b59dc69ea475c66b207dbcc](https://user-images.githubusercontent.com/98099819/171431018-4775a124-b6ef-430f-8287-7fe38959db24.png)
+![43e6f55bc1b740efb5e843aa31e93cd](https://user-images.githubusercontent.com/98099819/171431049-280bbdc9-71bc-42c9-beb1-fb89cf6ac777.png)
