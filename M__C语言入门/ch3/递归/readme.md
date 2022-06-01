@@ -3,54 +3,5 @@
 2. 每次递归调用后越来越接近这个限制条件
 
 递归思路总结：
-1.挨个取数（1234逐个打印1 2 3 4）
-  Print(1234)
-  Print(123) + 4
-  Print(12) + 3 + 4
-  Print(1) + 2 + 3 + 4
-  1 + 2 + 3 + 4
-  递归限制条件：
-  n>9
-
-2.求字符串数组长度
-  如char arr[] = "bit";
-  
-  1 + my_strlen(str+1)  //这里的str是指针
-  |               |
-  b               i
-  
-  1 + 1 + my_strlen(str+1)
-  |   |               |
-  b   i               t
-  
-  1 + 1 + 1 + my_strlen(str+1)
-  |   |   |           |  
-  b   i   t          '\0'
-  
-  1 + 1 + 1 + 0
-  =3
-  递归限制条件：
-  *str != '\0' (指针变量的值不为'\0')
-  
-3.求n的阶乘
-  公式：
-        Fac(n) n<=1 -> 1
-               n>1  -> n*Fac(n-1)
-                       n*(n-1)*Fac(n-2)
-                          ...
-                       n*(n-1)*(n-1)*...*1
-
-4.求第n个斐波那契数
-  公式：
-        Fib(n) n<=2 -> 1
-               n>2 -> Fib(n-1)+Fib(n-2)
-  如n=50
-     50
-   49  48
- 48 47 47 48   （一个一个拆）
-   ......
-  
-  
-        
-  
-     
+![3711126fcc7aa276f9435a1227fdcc6](https://user-images.githubusercontent.com/98099819/171429850-c8eded46-d4dd-4430-942b-4304de8bb6c9.png)
+![f04b5b8fac075d8daf2b545d7ad6472](https://user-images.githubusercontent.com/98099819/171429746-b43f9026-a0c2-485b-b453-d3c8d80e631b.png)
