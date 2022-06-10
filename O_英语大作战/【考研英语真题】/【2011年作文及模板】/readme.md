@@ -13,5 +13,15 @@ Der jane:
     
     i love it for two reasons .
     To begin with ,the film explores the theme of growth and self discovery in the workplace,
-    whith
+    which could easily strike a chord with young people.
+    The aspirant heroine undergoes an 'ugly duckling - swan' phase in the workplace and finally
+    returns to her initial ideal, inspiring us to be true to ourselves.
+    
+    In addition  , the grammour of fashion industry also adds appeal to the film 
+    
+    Hope you enjoy the moive and look forward to your reply
+    
+                                                                   
+                                                                      Yours truly
+                                                                         Li  Ming
 ```
