@@ -7,14 +7,14 @@
 Der jane:
   
     i'm so glad to hear from you as it has been a long time since we met last time.
-    You told me in your letter that you loved to watch insprational movies,
+    You told me in your letter that you loved to watch insprational（给与启迪的） movies,
     so i'm writing to recommend one of my favoite movies to you,
     which is called The Devil Wears Rrada.
     
     i love it for two reasons .
-    To begin with ,the film explores the theme of growth and self discovery in the workplace,
-    which could easily strike a chord with young people.
-    The aspirant heroine undergoes an 'ugly duckling - swan' phase in the workplace and finally
+    To begin with ,the film explores the theme of growth and self-discovery（自我发现） in the workplace,
+    which could easily 【strike a chord with】（引起 ... 共鸣） young people.
+    The aspirant（有抱负的） heroine undergoes（经历） an 'ugly duckling - swan'（丑小鸭变成白天鹅）phase in the workplace and finally
     returns to her initial ideal, inspiring us to be true to ourselves.
     
     In addition  , the grammour of fashion industry also adds appeal to the film 
