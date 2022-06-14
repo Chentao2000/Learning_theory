@@ -7,10 +7,23 @@ FROM `courses`
 WHERE `name` = 'System Design';
 -- 注意这里 判断是单引号 ： 'System Design' --
 
--- practice --
+-- practice 1 --
 
 -- Write your SQL Query here -- 
 -- example: SELECT * FROM XX_TABLE WHERE XXX --
 SELECT *
 FROM `courses`
 WHERE `student_count` > '1000';
+
+
+-- practice 2 --
+
+-- Write your SQL Query here -- 
+-- example: SELECT * FROM XX_TABLE WHERE XXX --
+
+SELECT *
+FROM `courses`
+WHERE `name` = 'Artificial Intelligence';
+
+
+
