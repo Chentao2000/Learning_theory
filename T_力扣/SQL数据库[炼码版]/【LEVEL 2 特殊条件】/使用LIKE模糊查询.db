@@ -14,3 +14,13 @@ SELECT *
 FROM `courses` 
 WHERE `name` LIKE 'D%'
 
+-- EXAMPLE --
+
+-- Write your SQL Query here --
+-- example: SELECT * FROM XX_TABLE WHERE XXX --
+Select name , email
+From teachers
+--Where email Like '%@qq.com'
+--Where right(email,7) = '@qq.com'
+Where email Regexp '@qq.com$'
+
