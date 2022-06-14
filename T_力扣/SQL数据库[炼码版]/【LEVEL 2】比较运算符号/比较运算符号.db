@@ -7,8 +7,22 @@ WHERE `student_count` > 800;
 
 
 -- PRATICE --
+
+-- Write your SQL Query here --
+-- example: SELECT * FROM XX_TABLE WHERE XXX --
 SELECT *
-FORM `teachers`
+FROM `teachers`
 WHERE `age` > 20;
+
+-- PRATICE --
+
+-- Write your SQL Query here --
+-- example: SELECT * FROM XX_TABLE WHERE XXX --
+SELECT `name`
+FROM `teachers`
+WHERE `country` = 'CN';
+
+
+ 
 
 
