@@ -15,7 +15,7 @@ FROM `course`
 WHERE `created_at` >= '2020-01-01' AND `created_at` < '2020-05-01'
 
 
--- EXAMPLE 2 --
+-- PACTICE 1 --
 
 --  注意下这里 SELECT 如果选定两个目标以上做输出地点 话 ，只用逗号 ，连` ` 都不用即可--
 
@@ -24,3 +24,15 @@ WHERE `created_at` >= '2020-01-01' AND `created_at` < '2020-05-01'
 SELECT name,created_at
 FROM `courses`
 WHERE `created_at` >= '2020-01-01' AND `created_at` < '2020-05-01';
+
+
+-- PACTICE 2 --
+-- Write your SQL Query here --
+-- example: SELECT * FROM XX_TABLE WHERE XXX --
+SELECT *
+FROM `courses`
+WHERE `teacher_id` = 4 AND `student_count` > 500
+
+
+
+
