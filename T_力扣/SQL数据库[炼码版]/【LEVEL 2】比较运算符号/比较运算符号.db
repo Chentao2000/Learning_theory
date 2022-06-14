@@ -1,1 +1,14 @@
+-- EXAMPLE --
+
+-- 请直接点击右下角“运行测试数据”按钮，查看 SQL 语句运行结果 --
+SELECT *
+FROM `courses`
+WHERE `student_count` > 800;
+
+
+-- PRATICE --
+SELECT *
+FORM `teachers`
+WHERE `age` > 20;
+
 
