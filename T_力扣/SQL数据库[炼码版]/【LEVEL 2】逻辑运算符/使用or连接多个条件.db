@@ -1,0 +1,16 @@
+-- EXAMPLE --
+
+-- 请直接点击右下角“运行测试数据”按钮，查看 SQL 语句运行结果 --
+SELECT *
+FROM `courses`
+WHERE `name` = 'System Design'
+	OR `name` = 'Django';
+  
+  
+-- PRACTICE 1 --
+
+-- 请直接点击右下角“运行测试数据”按钮，查看 SQL 语句运行结果 --
+SELECT *
+FROM `courses`
+WHERE `name` = 'System Design'
+	OR `name` = 'Django';
