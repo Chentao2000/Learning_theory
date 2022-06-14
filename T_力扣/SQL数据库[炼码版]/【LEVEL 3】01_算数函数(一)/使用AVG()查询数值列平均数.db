@@ -7,6 +7,9 @@ SELECT AVG(`student_count`) AS `average_student_count`
 FROM `courses`;
 
 -- EXAMPLE 02 --
-SELECT AVG(`age`) AS `average_teacher_age`
+-- 使用 AS 关键字取别名
+SELECT AVG(age) AS `average_teacher_age`
+--从 teachers 表中查询
 FROM `teachers`
-WHILE ``
+-- 根据email进行模糊查询 qq邮箱的结尾就是下列形式的 --
+WHERE email LIKE '%@qq.com';
