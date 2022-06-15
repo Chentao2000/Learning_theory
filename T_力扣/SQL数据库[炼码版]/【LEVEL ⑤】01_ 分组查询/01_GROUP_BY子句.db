@@ -1,0 +1,10 @@
+ -- GROUP BY 函数就是 SQL 中用来实现分组的函数，其用于结合聚合函数，能根据给定数据列的每个成员对查询结果进行分组统计，最终得到一个分组汇总表 --
+ 
+ -- EXAMPLE 01 --
+ -- 可以看到我们教师表中的教师来自不同的国家，现需要统计不同国家教师的人数，并将结果按照不同国籍教师人数从小到大排列，请编写相应的 SQL 语句实现。 --
+SELECT `country`, COUNT(`country`) AS `teacher_count`
+FROM `teachers`
+GROUP BY `country`
+ORDER BY `teacher_count`, `country`;
+
+
