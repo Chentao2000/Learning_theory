@@ -32,7 +32,7 @@ int main()
     stop = clock();
     duration = ((double)(stop - start))/CLK_TCK;
     printf("ticks1 = %f\n", (double)(stop - start));
-    printf("duration1 = %6.2e\n", duration);
+    printf("duration1 = %6.2e\n", duration); //%6.2e意思是整个输出中包含2位小数，并且做四舍五入
     
     start = clock();
     f2(MAXN-1, a, 1.1);
