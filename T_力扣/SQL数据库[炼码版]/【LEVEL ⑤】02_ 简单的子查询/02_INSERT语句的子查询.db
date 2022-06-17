@@ -4,3 +4,13 @@
 INSERT INTO `teachers_bkp` 
 SELECT * 
 FROM `teachers`;
+
+
+--- PRACTICE 01 --
+
+-- Write your SQL INSERT here --
+
+INSERT INTO `teachers_bkp`
+SELECT *
+FROM `teachers`
+WHERE age > 20 ;
