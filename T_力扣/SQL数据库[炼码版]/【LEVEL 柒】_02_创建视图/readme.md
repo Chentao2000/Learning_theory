@@ -8,3 +8,18 @@
 
 ![1655559985709](https://user-images.githubusercontent.com/68007558/174440982-aa3eed8a-34fd-4253-961b-5d84c12d8063.png)
 
+# 用连接来创建视图：
+
+![1655560680579](https://user-images.githubusercontent.com/68007558/174441768-27e0c9fa-44a8-4105-9690-730adac063c3.png)
+
+# 用子查询来创建视图：
+
+![1655560716911](https://user-images.githubusercontent.com/68007558/174441798-2354e9e9-61f1-4bbc-a8cf-9d710f514491.png)
+
+
+# 用显式视图列创建视图：
+
+![1655560760608](https://user-images.githubusercontent.com/68007558/174441822-91030851-4dfe-4e41-9265-ebffe817c0f8.png)
+
+
+
