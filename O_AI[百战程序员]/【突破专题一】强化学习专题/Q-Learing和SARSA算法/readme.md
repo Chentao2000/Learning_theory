@@ -1,4 +1,9 @@
 ##  章节一 ： 强化学习 ： 通过智能体与环境交互进行学习：
+```
+资料网址：
+链接：https://pan.baidu.com/s/1C5XRA1g5SRSj9LWeWI2e9A 
+提取码：qg4e 
+```
 
 Action 动作
 Rereward 奖励
@@ -19,4 +24,8 @@ V 值的策略：走到最终状态很多次，最终获得总和的平均值 �
 ### - 求动作V的Q值 ：
 
 ![1655604904075](https://user-images.githubusercontent.com/68007558/174463055-e521877a-b73e-4cd0-a795-b8582e87562e.png)
+
+# 章节 七： 理解Q-table 创建 maze 交互环境：
+
+
 
