@@ -1,3 +1,52 @@
+# 解题思路：
+![1655627940786](https://user-images.githubusercontent.com/68007558/174472855-f1e829fb-fd62-4421-b017-2ca9d0965041.png) 
+ 
+这个地方结题求两个交集直接 .&就好了 ，点 应该是 调用的意思 。之后所有题都有这个调用的意思
+```java
+    println("两个集合的交集是："+set.&(set1))
+```
+
+这一段是把字符串转换成了整数型：
+
+```java
+    for(x<-1 to  n){  
+      var line =StdIn.readLine()  
+      var line1=line.toInt  
+      arr.insert(x-1,line1)  
+    }  
+
+
+```
+----
+# 完整代码
+```java
+import scala.collection.mutable.ArrayBuffer  
+import scala.io.StdIn
+object ForDemo {  
+  def main(args: Array[String]): Unit = {
+    val set = Set(2,3,7,8)  
+    // 请在 Begin-End 间编写代码  
+    /********** Begin **********/  
+    // 接收给定的第一个数据  
+    val n=StdIn.readInt()  
+    // 创建数组  
+    var arr = new ArrayBuffer[Int]()  
+    // 将数据添加到数组  
+    for(x<-1 to  n){  
+      var line =StdIn.readLine()  
+      var line1=line.toInt  
+      arr.insert(x-1,line1)  
+    }  
+    var set1= arr.toSet  
+    println("两个集合的交集是："+set.&(set1))
+    /********** End **********/
+  }  
+}
+```
+
+
+----
+
 常见的集合类有 List 列表、Set 集合、Map 映射和元组等。接下来我们将为大家介绍第二种集合---Set 集合。
 
 Set 集合简介
@@ -42,6 +91,7 @@ object ForDemo {
 ```
 ![在这里插入图片描述](https://img-blog.csdnimg.cn/55cf6a5a40544393b0e6018be4919fd1.png)
 
+
 ```java
 object ForDemo {  
   def main(args: Array[String]): Unit = {
@@ -63,7 +113,7 @@ site1 ++ site2 : Set(腾讯, 淘宝, 百度, 华为, educoder)
 site1.++(site2) : Set(腾讯, 淘宝, 百度, 华为, educoder)  
 ```
 
-需要注意的是：1.两个集合合并之后，会把重复的元素去除；2.只有当两个集合的元素类型相同时，才可以做连接。
+- 需要注意的是：1.两个集合合并之后，会把重复的元素去除；2.只有当两个集合的元素类型相同时，才可以做连接。
 
 交集
 使用 & 方
