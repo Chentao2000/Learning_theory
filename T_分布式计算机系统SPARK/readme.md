@@ -3,11 +3,22 @@
 其次是你要记住一些代码编写的技巧
 以这次Set集合的使用为例子
 
+
+## 读取给定字符串  
+```java
+ val line=StdIn.readLine() 
+```
+    val line=StdIn.readLine() 
+    
+## 切割字符串，获取单词数组  
+ ```java
+  val arr=line.split(",")
+```
+
 ## 接收数据（一个一个数据接受到变量）
 ```java
  val n=StdIn.readInt()  
 ```
-
 
 
 ## 接收数据（一行数据接受到数组）
