@@ -23,6 +23,7 @@ object ForDemo {
     // 请在 Begin-End 间编写代码
     /********** Begin **********/
     // 按要求连接列表并去重，最后输出去重后的列表
+    println((list:::list1).distinct)
       
       
     /********** End **********/
