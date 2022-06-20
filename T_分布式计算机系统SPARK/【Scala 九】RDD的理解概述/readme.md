@@ -1,5 +1,6 @@
 ## RDD介绍
 
+![112a5a56ddee8f7350e4ffa657c22fa](https://user-images.githubusercontent.com/68007558/174552579-e709a113-b352-4d92-b5f9-6bccf2da647e.png)
 
 
 
