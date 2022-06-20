@@ -9,6 +9,6 @@ object TestSort_01{
       println(xs.sortBy(d=>d).reverse) //降序
       println("=========  sortWith排序 ========== ")
       println(xs.sortWith(_<_)) //升序
-      println(xs.sortWith(_>))) //降序
+      println(xs.sortWith(_>_)) //降序
    }  
 }  
