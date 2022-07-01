@@ -15,3 +15,7 @@
 
 
 ![1656641935412](https://user-images.githubusercontent.com/68007558/176810474-bc815ab3-b4f5-4c2d-b2cb-3f94e191328e.png)
+
+# 据说是必考的扩展问题：
+
+![1656651132301](https://user-images.githubusercontent.com/68007558/176825819-0bebb2d5-22b9-47a9-af11-c5cc3349675e.png)
