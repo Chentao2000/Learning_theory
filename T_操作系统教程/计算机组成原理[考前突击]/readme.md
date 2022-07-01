@@ -5,3 +5,13 @@
 
 
 ![1656640694703](https://user-images.githubusercontent.com/68007558/176808347-eb2b18bd-7d5a-4efc-be02-7466e547646d.png)
+
+# 操作数：
+
+![1656641484425](https://user-images.githubusercontent.com/68007558/176809676-ee19a7e8-27f6-4a86-b6ce-b971568ed4a7.png)
+
+
+![1656641655691](https://user-images.githubusercontent.com/68007558/176809987-53c19a8e-4bb1-4064-9c0b-2f04badf7b79.png)
+
+
+![1656641935412](https://user-images.githubusercontent.com/68007558/176810474-bc815ab3-b4f5-4c2d-b2cb-3f94e191328e.png)
