@@ -5,3 +5,14 @@
 ![6e836571a935a78550f88150f8d31e3](https://user-images.githubusercontent.com/68007558/174461952-506ad728-9abf-4a23-870b-f640297e8d7f.png)
 
 # 原创思维！
+
+----
+最近进行卓旻之治学习方法“改革”计划 ：
+改革的重要目标就是 把题目释放出来 , 利用网络的方式, 形成自己的刷题网刷题库
+
+做了个数据库的复习题连接：
+
+
+
+![bb2940ec4a4ed4607e0d6c9e5cf1ee7](https://user-images.githubusercontent.com/68007558/177042456-8f551d91-0be8-4515-b817-10bb96c98bf5.png)
+
