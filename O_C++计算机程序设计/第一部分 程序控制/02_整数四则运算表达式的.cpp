@@ -8,7 +8,7 @@ int main()
     //请在Begin-End之间添加你的代码，按要求格式输出四则运算式子
     /********** Begin *********/
         int s, d, p, c;
-    scanf("%d\n", &x);
+    scanf("%d", &x);
     scanf("%d", &y);
     s = x + y;
     d = x - y;
