@@ -1,3 +1,8 @@
+// 包含两种I/O库，可以使用任一种输入输出方式
+#include <stdio.h>
+#include <iostream>
+using namespace std;
+
 int main()
 {
 		int n;
