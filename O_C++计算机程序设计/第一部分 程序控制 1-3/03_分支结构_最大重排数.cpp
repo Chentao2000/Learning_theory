@@ -1,3 +1,4 @@
+
 // 包含两种I/O库，可以使用任一种输入输出方式
 #include <stdio.h>
 #include <iostream>
@@ -15,8 +16,7 @@ int main()
     int num = 0 ;//个位数
     cin >> n ;
     if (n<10){
-        cout << 0 << 0 << n ;
-        cout << 0 << n << 0 ;
+
         cout << n << 0 << 0 ;
     }
     else if ( 10<=n && n<100)
@@ -25,44 +25,43 @@ int main()
         ten = n /10;
         num = n % 10;
         if(ten >= num){
-        cout << 0 << num << ten ;
-        cout << num << ten << 0 ;
+
         cout << ten << num << 0 ;
         }
         else{
-        cout << 0 <<  ten<<  num;
-        cout << ten <<  num << 0 ;
+
         cout << num <<  ten<< 0 ;
         }
+    }
 
     else if ( 100<= n && n<1000)
     {
         //取十位数
         hun = n /100 ;
         ten = n / 10%10;
-        num = n % 100;
-        if(ten>= num && hun >= ten ){
-        cout << hun << num << ten ;
-        cout << num << ten << hun ;
-        cout << ten << num << hun ;
-        }
-        else if (ten<= num && hun >= num ){
-        cout << hun <<  ten<<  num;
-        cout << ten <<  num << hun ;
-        cout << num <<  ten<< hun ;
-        }
-        else if(ten<= num && hun <= ten ) {
-        cout << hun <<  ten<<  num;
-        cout << ten <<  num << hun ;
-        cout << num <<  ten<< hun ;
-        }
-        
+        num = n % 100%10;
+        // 最笨的排序方法
+        if ( hun >=ten && ten>= num)
+         cout << hun << ten << num ;
+        else if (hun >=num && num >= ten)
+           cout << hun << num << ten ;  
+
+        else if (ten >=num && num >= hun)
+           cout << ten << num << hun ; 
+        else if (ten>= hun && hun >= num) 
+            cout << ten << hun << num ; 
+
+        else if (num >=ten && ten >= hun)
+           cout << num << ten << hun ; 
+        else if (num>= hun && hun >= ten) 
+            cout << num << hun << ten ; 
+
     }
 
     
     
     /********** End **********/
     // 输出重排后的数
-    cout << m << endl;
+
     return 0;
 }
