@@ -52,3 +52,51 @@ int main()
     return 0;  
 }  
 ```
+
+## 第五关 ：
+
+
+
+strstr 函数
+在一个长串中查找子串可以使用strstr函数，该函数的函数原型为：
+```cpp
+char* strstr(const char* s1, const char* s2);           
+```
+该函数从 s1 所指字符串中第一个字符起，顺序向后查找出与 s2 所指字符串相同的子串，若查找成功则返回该子串首次出现的首地址，否则返回 NULL。
+
+例如：
+```cpp
+char *a="abcdeabcde";  
+char *b="bcd";  
+cout<<strstr(a,b)<<endl;  
+```
+
+该程序输出结果为“bcdeabcde”，因为strstr(a, b)的返回值为“bcd”在“abcdeabcde”中第一次出现的首地址，所以用 cout 输出时，从该位置的字符开始，逐个输出直到 '\0'，即字符串“bcdeabcde”。
+
+当然，查找子串时，也可以从长串的某个位置开始。
+```cpp
+char *a="abcdeabcde";  
+char *b="bcd";  
+cout<<strstr(a+4,b)<<endl; 
+```
+
+strlen 函数           
+另外，下次从什么地方开始查找子串？应该是上次找到子串的开始位置加上子串的长度。其中，函数strlen可以计算字符串的长度，其函数原型为：
+```cpp
+int strlen(const char *s);  
+```
+函数 strlen 只有一个参数 s，它是一个字符指针，代表了一个字符串，函数计算 s 指向字符串的长度并返回。
+
+
+```cpp
+char *a="x";  
+char *b="Hello world!";     
+cout<<strlen(a)<<endl;  // 输出 1     
+cout<<strlen(b)<<endl;  // 输出 12  
+``` 
+
+
+
+
+
+
