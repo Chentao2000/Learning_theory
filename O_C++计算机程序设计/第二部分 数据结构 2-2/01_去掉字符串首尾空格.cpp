@@ -1,25 +1,44 @@
-#include <iostream>
+ #include <iostream>
 using namespace std;
 
-void pswap(int * p, int *q);
+
+char * trim(char * str);
 
 int main()
 {
-    int a, b;
-    cin >> a >> b;     // 输入两个整数
-    pswap(&a,&b);     // 调用pswap函数，交换a、b的值
-    cout << a << " " << b << endl;     // 输出a、b的值
+    char s[1024];     // 定义存储字符串的一维字符数组
+    // 输入一行字符，可以包含空格
+    // 输入的字符串存入s中，最多读取个字符，后面自动加上'\0'
+    cin.getline(s,1024);
+    cout << trim(s) << endl;     // 输出去掉首尾空格后的字符串
     return 0;
 }
 
-//函数pswap：交换指针p和q指向的单元中的整数值
-//参数：p,q-int类型指针，指向要交换的整数
-void pswap(int * p, int *q)
-{
-    // 请在此添加代码，实现函数pswap
+// 函数trim：去掉字符串首尾空格
+// 参数：str-字符指针，指向输入的字符串
+// 返回值：字符指针，指向去掉首尾 空格后的字符串（首地址）
+// 提示：可以直接在字符串str中操作
+    // 请在此添加代码，实现函数trim
     /********** Begin *********/
-    
-    
-    
+char * trim(char * str)
+{
+    char *p = str;
+    while(*p != '\0')
+    {
+     	p++;
+    }   
+    p--;
+    while(p >= str && *p == ' ')
+    {
+        *p = '\0';
+        p--;
+    }
+    p = str;
+    while(*p == ' ')
+    {
+     	p++;
+    }
+    return p;
+
     /********** End **********/
 }
