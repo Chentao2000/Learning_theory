@@ -95,26 +95,12 @@ cout<<strlen(a)<<endl;  // 输出 1
 cout<<strlen(b)<<endl;  // 输出 12  
 ``` 
 
+![1657524168213](https://user-images.githubusercontent.com/68007558/178210408-541ab31c-061c-4820-b3de-dea3f7ce189f.png)
+
+
 
 
 
 # 第六关 : 字符串的部分复制:
 
-函数 strmncpy 的原型为：
-
-void strmncpy(char *s, int m, int n, char *t);  
-参数 s 指向源字符串，t 指向字符串复制的目标单元，函数功能为将 s 指向字符串从第 m 个（从0开始编号）字符开始的连续 n 个字符复制到 t 指向的存储单元；
-
-如果第 m 个字符后面的字符数不足 n 个，则复制到 '\0'为止；
-
-如果 s 的长度不到 m，则复制空串。
-
-例如：
-```cpp
-char *s = "abcdefghijklmn";  
-char t[20];  
-strmncpy(s,4,6,t);  
-cout << t << endl;
-```
-输出结果为：efghij
 
