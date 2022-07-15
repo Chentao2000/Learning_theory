@@ -6,5 +6,5 @@
 # 必备知识点 ：
 - jupyter notebook 虚拟环境的使用：
 ![1654090658031](https://user-images.githubusercontent.com/68007558/171417804-e44699ef-563c-41fc-abd6-6668c419b282.png)
-
+--
 
