@@ -3,6 +3,7 @@
 
 ## 错题记录:
 
+![4600cc30e6d526f02e6e1560fd7ab42](https://user-images.githubusercontent.com/68007558/180407110-8047f816-6ac5-44fb-a2e3-ee1138651a1b.jpg)
 
 
 ## 打卡专区：
