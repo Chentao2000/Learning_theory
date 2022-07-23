@@ -30,7 +30,7 @@ MAC : 介质访问地址
 - 把较大的局域网分割成较小的与地理位置无关的逻辑上的VLAN,而每个VLAN是一个较小的广播域
 
 
-
+```
 
 ## 错题记录:
 04 C -> B
@@ -41,8 +41,8 @@ MAC : 介质访问地址
 
 
 ## 打卡专区：
+![7717129a467c16d4d6359d9c1beac3c](https://user-images.githubusercontent.com/68007558/180606886-a50f3475-88c8-4fa7-9215-d2b962b38a01.jpg)
 
-![Uploading 7717129a467c16d4d6359d9c1beac3c.jpg…]()
 
 
 
