@@ -12,12 +12,16 @@
 网桥 ： 与高层协议无关 
 路由器 ： 面向协议 如OSI TCP/IP IPX
 ```
-
+```
+ip路由器会进行差错检验
+```
 ## 错题记录:
-
+13 C -> D
+14 C -> D
 
 
 ## 打卡专区：
+![5c74050b5f61a4e5bac8febc6785eb6](https://user-images.githubusercontent.com/68007558/180782933-5be42a32-9b01-4ff9-8639-34fafa4e3806.jpg)
 
 
 ## 答案汇总:
