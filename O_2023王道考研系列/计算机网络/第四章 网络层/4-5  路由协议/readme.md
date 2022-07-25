@@ -38,9 +38,11 @@ BGP特点|BGP交换的路由信息的结点数量级是自治系统的数量级|
 
 ## 错题记录:
 
-
+3 . A -> B
+11 . A -> D
 
 ## 打卡专区：
+![428579531ffbe58a41d0c7702c84131](https://user-images.githubusercontent.com/68007558/180753338-b2ed42d4-4d48-4bb7-96d8-2fc022fcd3e9.jpg)
 
 
 ## 答案汇总: 
