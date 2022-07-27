@@ -60,6 +60,7 @@ IP-> 域名 ： 正向解析
 
 ## 打卡专区：
 
+![图片](https://user-images.githubusercontent.com/68007558/181223607-a6dcff44-b52f-487c-84ff-bbe57deb577e.png)
 
 ## 答案汇总: 
 1-5 DAADC
