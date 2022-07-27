@@ -24,11 +24,12 @@ FTP (客户/服务器 TCP传输服务)服务进程部分 ：
 ```
 
 ## 错题记录:
-
+08 B -> E
 
 
 ## 打卡专区：
 
+![图片](https://user-images.githubusercontent.com/68007558/181229294-70c20fe3-fc94-49c4-b5bb-35dc1424e247.png)
 
 ## 答案汇总: 
 1-5 CCCCD
