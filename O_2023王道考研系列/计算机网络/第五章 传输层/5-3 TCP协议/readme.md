@@ -154,3 +154,13 @@ cwnd = ssthresh ： 慢开始算法，又可以使用拥塞避免算法
 
 
 ## 刷题补充:
+
+1-5 CCDBD
+6-10 BCACA
+11-15 CDAC (A\C)
+16-20 DCBCC
+21-25 CDABA
+26-30 DCACB
+31-35 BAAAC
+36-40 DDCBC
+41 C
