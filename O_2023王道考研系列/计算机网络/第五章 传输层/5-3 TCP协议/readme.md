@@ -145,15 +145,24 @@ cwnd = ssthresh ： 慢开始算法，又可以使用拥塞避免算法
 
 ## 错题记录:
 
+2 A -> C
+7 A -> C
+8 C -> A
+15 AB -> AC
+16 B -> D
+17 B -> C
+20 C -> B
+23 A
+37 C->D
+38 B -> C
+41 C
 
 
 ## 打卡专区：
+![图片](https://user-images.githubusercontent.com/68007558/181210697-8de0d7d3-f603-4623-9514-5ec806763775.png)
 
 
 ## 答案汇总: 
-
-
-## 刷题补充:
 
 1-5 CCDBD
 6-10 BCACA
@@ -164,3 +173,8 @@ cwnd = ssthresh ： 慢开始算法，又可以使用拥塞避免算法
 31-35 BAAAC
 36-40 DDCBC
 41 C
+
+## 刷题补充:
+
+- IP首部有一共协议字段 ，用于指明上层协议是 TCP 还是UDP ，17代表UDP ，6代表TCP
+- UDP首部有8B TCP首部最短有20B （放在报文段的数据部分）
