@@ -49,7 +49,7 @@ MAC : 介质访问地址
 ## 答案汇总:
 1-5 CCABA
 6-10 BCBCA
-11-15 DBCBB
+11-15 DBCCB
 16-20 BBBCC
 21-25 ABA
 
