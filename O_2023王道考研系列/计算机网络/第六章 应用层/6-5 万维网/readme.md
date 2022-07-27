@@ -65,6 +65,7 @@ HTTP 请求报文 和响应 报文都由三个部分组成
 ```
 
 ## 打卡专区：
+![图片](https://user-images.githubusercontent.com/68007558/181255522-566f35bd-e61c-47a1-8b5a-76e919c3c224.png)
 
 
 ## 答案汇总: 
