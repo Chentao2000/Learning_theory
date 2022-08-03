@@ -8,8 +8,7 @@
 
 
 ## 打卡专区：
-
-![774d184489575b7eadc0f4c33e18def](https://user-images.githubusercontent.com/68007558/182551473-36c4712c-6583-4bf7-99e9-b3113d1be33e.jpg)
+![e7f17ef0182e5154a5866cc3cca9c63](https://user-images.githubusercontent.com/68007558/182551885-45e65737-9843-4bd1-bf93-e26ba3cb0815.jpg)
 
 ## 答案汇总: 
 AABDA
