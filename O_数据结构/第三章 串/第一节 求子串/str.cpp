@@ -16,22 +16,22 @@ void SubStr(SString t, SString s,int i,int len)
 {
 	// 请在这里补充代码，完成本关任务
     /********** Begin *********/
-   int h = 0,count=0,j=0;
+   int h = 0,j=0;
+   char p = 'a';
    while(s[h] !='\0'){
        h ++ ;
       // printf("%d",h);
    }
    if( h < (i+len) ){
        printf("error");
-       return;
-   }
-   else if(len==0){
-       return;
-
-   }
-   else{
-
-       printf("cdef");
+   }else{
+      while(len !=0)
+    {
+        
+       printf("%c",s[i++]);
+       len --;
+    }       
+       
    }
           
 	
