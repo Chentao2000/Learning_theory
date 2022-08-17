@@ -13,7 +13,7 @@
  
 ## **定义单链表**
  - **节点和结点的区别**，视频中应该写错了，在数据结构算法中应都为结点。节点呢，被认为是一个实体，有处理能力，比如，网络上的一台计算机；而结点则只是一个交叉点，像“结绳记事”，打个结，做个标记，仅此而已，还有就是，要记住：**一般算法中点的都是结点**。
- - **法一**：![在这里插入图片描述](https://img-blog.csdnimg.cn/2a58ba5c9c5f4807bc31f878ae0dd968.png)先struct定义结构体再用typedef重命名
+ - **法一**：先struct定义结构体再用typedef重命名![在这里插入图片描述](https://img-blog.csdnimg.cn/2a58ba5c9c5f4807bc31f878ae0dd968.png)
 
  - **法二（最简单）**：![在这里插入图片描述](https://img-blog.csdnimg.cn/caa3be85d8fe45bf9dd8055af82b0115.png)这里直接同时用typedef和struct，把**单链表结点命名为LNode**，把**指向struct LNode的指针命名为*LinkList**；
  - struct LNode *是指向下一结点的指针，这里名字设为next；
@@ -39,5 +39,8 @@
 **带头节点**：**头指针L所指向的下一结点（头结点）是不存放实际的数据的，只有头结点的下一结点才存放数据**。
 ## 总结
 ![在这里插入图片描述](https://img-blog.csdnimg.cn/27a2f882b51d45888ba5a088aba7f2b3.png)
+
+
+
 
 
