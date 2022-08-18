@@ -81,7 +81,7 @@ int ListInsert(LinkList &L,int i,int e)
 	// 在带头结点的单链线性表L的第i个元素之前插入元素e  
 	/********** Begin **********/ 
     int j = 0;  //j记录p的指向的位置
-    LinkList p=L,s; //p指针指向线性表的第一个元素和结点s
+    LinkList p=L,s; //定义p指针指向头结点（相当于L）和 定义指针s
     while(p && j<i-1) //当p还没有指到第i个元素时
     {
         p = p->next; //p指向下一个结点
