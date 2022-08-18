@@ -40,6 +40,80 @@
 ## 总结
 ![在这里插入图片描述](https://img-blog.csdnimg.cn/27a2f882b51d45888ba5a088aba7f2b3.png)
 
+#  2.3.2 单链表的插入和删除
+![在这里插入图片描述](https://img-blog.csdnimg.cn/576dcea420da46c782772c55095e078f.png)
+# 1、按位序插入（带头结点）
+**ListInsert(&L, i, e)**
+插入操作，在表L的第i个位置上插入指定元素e。
+因为是在第i个位置上插入结点，故要找到i-1个结点，再将新结点插入其后。
+即**先找到第i-1个结点，再用malloc申请一个新的结点存入数据元素e。**
+ - **如果i=1则意为插在表头**
+ - **头结点看作是第0个结点，即j=0**
+ - **j用来记录p当前指向哪个结点**
+![在这里插入图片描述](https://img-blog.csdnimg.cn/5ea277d108f54c9dba89677bdae6bb18.png)
+最坏时间复杂度为O（n）：插到最后面时
+故平均复杂度为O（n），取最长时间
+
+```cpp
+LNode *s = (LNode *)malloc(sizeof(LNode));
+//申请新的结点空间,并用指针s指向它
+s->data=e;
+//把参数e存入新结点中
+s->next=p->next;
+//s指向结点的下一个指针next，等于p指向结点的下一个指针next
+p->next=s; 
+//将结点s连到p之后
+return true；
+//插入成功
+```
+**s->next=p->next;和p->next=s; 这两句顺序不能颠倒，否则指针只会指向自己**
+要先连接后面再连接前面![在这里插入图片描述](https://img-blog.csdnimg.cn/50673496401b44a8b955ed14569edd04.png)
+## 2、按位序插入（不带头结点）
+**ListInsert(&L, i, e)** (同上)
+由于不存在头结点故不存在”第0个“结点，因此i=1时需要特殊处理。
+**如果不带头结点，则插入，删除第1个元素时，需要更改头指针L，让L指向新的结点。**
+![在这里插入图片描述](https://img-blog.csdnimg.cn/55a2f4fa0ef442789f11747489531a17.png)
+**除了考虑当i=1时的情况，也就是插入第1个结点的操作与其他结点操作不同。后续逻辑和带头节点的一样。**
+## 3、指定结点的后插操作
+![在这里插入图片描述](https://img-blog.csdnimg.cn/55da3e6b948c44829dff96aa44007d11.png)
+
+## 4、指定结点的前插操作
+**在p结点之前插入元素e**
+单链表的特性：**已知一个指定节点的地址，因为这个节点中只保存一个 next 指针**，所以只知道后面的区域，而不知道前面的区域。
+**故申请一个新的结点在p指向结点的后面，新的结点再复制p结点的数据，再把e的数据放到p结点中**
+
+![在这里插入图片描述](https://img-blog.csdnimg.cn/ee34d0b84d08487882474d41d56a5f82.png)王道书版本中直接传入了新的要插入的结点s：
+![在这里插入图片描述](https://img-blog.csdnimg.cn/3bdd25016ba94df1a11f4400fe44eeb8.png)
+**先把s连到p的后面，然后申明一个temp变量把p结点的内容保存下来，再把s的内容复制到p里面，再把temp中的内容复制s里面。**
+## 5、按位序删除（带头节点）
+
+**ListDelete（&L，i，&e）**：删除操作
+ - 删除表L中第i个位置的元素，并用e返回删除元素的值。
+ - **因为删除第i个位置的元素，故要找到i-1个结点，将其指针指向第i+1个结点，并释放第i个结点。**
+ - 因为要带回e，故传入时要用&e
+![在这里插入图片描述](https://img-blog.csdnimg.cn/a8119f156dac49d68f9e6986fe50c837.png)![在这里插入图片描述](https://img-blog.csdnimg.cn/79b3a6dcb79f4f979aef6e2b328c5324.png)
+## 6、指定结点的删除
+*bool DeleteNode(LNode *p)**
+删除p的下一个结点q
+![](https://img-blog.csdnimg.cn/842af7395ff84d30a583b1434d32b053.png)
+p->data = p->next->data;
+//p的数据，等于p指向的下一个结点的数据
+![在这里插入图片描述](https://img-blog.csdnimg.cn/df6aa3a70ea04658b2f50c19e58826cc.png)
+但如果删除的是最后一个结点，这个结点指向的时NULL，那么就不存在q->next，故上面的代码就会报错（但王道书上也是这个代码）
+![在这里插入图片描述](https://img-blog.csdnimg.cn/42f5a9154831414e8e437f340736c094.png)
+**故这里也体现了单链表的局限性，无法逆向检索。
+故这里就有了双链表，即可以双向检索的链表。
+**
+## 7、总结
+![在这里插入图片描述](https://img-blog.csdnimg.cn/b392922c773b4afd9e250299655846e5.png)
+封装的好处：
+
+![在这里插入图片描述](https://img-blog.csdnimg.cn/e655c6442b554f6783cfe9cdaede2358.png)可以直接return使用
+
+
+
+
+
 
 
 
