@@ -1,7 +1,7 @@
 # 2.3 单链表
 ## 2.3.1 单链表的定义
 ![在这里插入图片描述](https://img-blog.csdnimg.cn/8a737f5a3f05466d96f47c0209a0ad9e.png)
-## 1、 **什么是单链表？**
+## **什么是单链表？**
 ![在这里插入图片描述](https://img-blog.csdnimg.cn/e6d9d6607ceb41e9a4a395cced12a2ab.png)
 ****typedef关键字**：数据类型重命名**
 **typedef <数据类型> <别名>**
@@ -11,7 +11,7 @@
  - 平时我们写的int x=1相当于zhengshu x=1； 
  - 平时我们写的int *p相当于zhengshuzhizhen p;
  
-## 2、**定义单链表**
+## **定义单链表**
  - **节点和结点的区别**，视频中应该写错了，在数据结构算法中应都为结点。节点呢，被认为是一个实体，有处理能力，比如，网络上的一台计算机；而结点则只是一个交叉点，像“结绳记事”，打个结，做个标记，仅此而已，还有就是，要记住：**一般算法中点的都是结点**。
  - **法一**：先struct定义结构体再用typedef重命名![在这里插入图片描述](https://img-blog.csdnimg.cn/2a58ba5c9c5f4807bc31f878ae0dd968.png)
 
@@ -20,7 +20,7 @@
  - 表示一个单链表时，只需声明一个**头指针L**
 ![在这里插入图片描述](https://img-blog.csdnimg.cn/29d292da4bc84afaa2bb394c8e950d33.png)
 
-## 3、**GetElem**：把链表L中第i个结点取出来并返回
+## **GetElem**：把链表L中第i个结点取出来并返回
 ![在这里插入图片描述](https://img-blog.csdnimg.cn/bf40df006bdb4811bac0202149931be4.png)
 
  - 因为要返回第i个结点，故要用LNode*来强调返回的是结点；
@@ -28,7 +28,7 @@
  - **强调这是一个结点用LNode***
  - **强调这是一个单链表用LinkList**
 
-## 4、**初始化单链表**
+## **初始化单链表**
   - **不带头结点时**![在这里插入图片描述](https://img-blog.csdnimg.cn/71967e6350f24d13948054c764fa9ca3.png)
  - **带头结点时**，在**初始化时会用malloc申请一片空间存头结点，并把地址赋给头指针L**，再把next指针设为NULL，头结点不存储数据
 ![在这里插入图片描述](https://img-blog.csdnimg.cn/ab2911eaf21143bf9d67fe7491da567b.png)**如果头结点之后暂时没有节点，即L->next = NULL，指向下一个指针为空，那么这个单链表就是空链表。**
@@ -37,12 +37,11 @@
  ![在这里插入图片描述](https://img-blog.csdnimg.cn/c4acfcbe1da640c1923965a69cb181e8.png)
 **不带头节点**：头指针L指向的下一结点就是实际用于存放数据的结点。
 **带头节点**：**头指针L所指向的下一结点（头结点）是不存放实际的数据的，只有头结点的下一结点才存放数据**。
-## 5、总结
+## 总结
 ![在这里插入图片描述](https://img-blog.csdnimg.cn/27a2f882b51d45888ba5a088aba7f2b3.png)
-
-## 2.3.2 单链表的插入和删除
+#  2.3.2 单链表的插入和删除
 ![在这里插入图片描述](https://img-blog.csdnimg.cn/576dcea420da46c782772c55095e078f.png)
-## 1、按位序插入（带头结点）
+# 1、按位序插入（带头结点）
 **ListInsert(&L, i, e)**
 插入操作，在表L的第i个位置上插入指定元素e。
 因为是在第i个位置上插入结点，故要找到i-1个结点，再将新结点插入其后。
@@ -110,7 +109,67 @@ p->data = p->next->data;
 
 ![在这里插入图片描述](https://img-blog.csdnimg.cn/e655c6442b554f6783cfe9cdaede2358.png)可以直接return使用
 
+## 2.3.3 单链表的查找
+ ![在这里插入图片描述](https://img-blog.csdnimg.cn/e515f494eb954d13b1801fa1f34c850e.png)
+ ## 1、按位查找
+ p刚开始指向第0个结点
+ 
+ ![在这里插入图片描述](https://img-blog.csdnimg.cn/ca9f0673002d4c7d8249d6dcab0b54f0.png)
+ 王道书版本：
+ p刚开始指向第1个结点
+ ![在这里插入图片描述](https://img-blog.csdnimg.cn/a82188613b424f71b53675b0b3eaa5c1.png)
+封装的好处：
+避免重复代码，调用即可查找
+![在这里插入图片描述](https://img-blog.csdnimg.cn/8593333bac1b4191a21c3f80a7ae94ff.png)
+![在这里插入图片描述](https://img-blog.csdnimg.cn/e2c0532c48fd47c680bc6fc4212f0409.png)
+## 2、按值查找
+![ ](https://img-blog.csdnimg.cn/79f5dda328e946cb8b9a713d76cfe718.png)
+平均时间复杂度：O（n）
+LNode *p = L->next; // 让p指向头结点的下一个结点
+## 3、求单链表的长度
+![在这里插入图片描述](https://img-blog.csdnimg.cn/4d42fd763e2247b2ae103acf2e5a5e59.png)
+## 4、总结
+![在这里插入图片描述](https://img-blog.csdnimg.cn/d03006dc24e74300b16187e3f920ab07.png)
+## 2.3.4 单链表的建立
 
+![在这里插入图片描述](https://img-blog.csdnimg.cn/76e56d5e709c4be7bf578b700547db47.png)
+![在这里插入图片描述](https://img-blog.csdnimg.cn/6a56c88b9c6543f5bede77c7f187aa82.png)
+## 1、尾插法建立单链表
+![在这里插入图片描述](https://img-blog.csdnimg.cn/b3ee0c720d11415da14ef67c24824882.png)
+
+  - 用malloc申请一个头结点，并把地址赋给头指针L
+ - 9999是自己设置的特殊值，输入9999后结束循环
+ - 设置一个表尾指针r，表尾指针从头指针开始
+ - 每输入一个值时，都申请一个新的结点s，把输入的值x给s，并让r的next指针指向s
+![在这里插入图片描述](https://img-blog.csdnimg.cn/c39fc60980a44a329c0e0b3b79423a56.png)
+ - 再让r指针指向新的表尾结点x
+![在这里插入图片描述](https://img-blog.csdnimg.cn/9cdf455c28914a42b82ea651b68734e2.png)
+ - 输入完后再让尾结点指针指空（NULL）
+ - 最后return L；
+
+ ## 2、头插法建立单链表
+ 即**对头结点进行后插操作**
+![在这里插入图片描述](https://img-blog.csdnimg.cn/0f37fd0b388c4f3fbd8df1748e8f1d42.png)
+ 头插法最后得到的数为输入的数的逆置，
+ **即*链表的逆置！！！***。
+ 
+
+ **注意尾插法可以不用L->next = NULL;但头插法一定要。**
+因为尾插法头结点指向的下一个位置的值始终会随着我们输入而变化，但头插法的头结点可能先指向某个不确定区域（脏数据），再通过s->next = L->next使得s也指向这个脏数据。
+**故要养成好习惯，只要是初始化单链表，都先把头指针指向NULL**
+
+
+
+
+
+
+
+
+
+
+
+
+  
 
 
 
