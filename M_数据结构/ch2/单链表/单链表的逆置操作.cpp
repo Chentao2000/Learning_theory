@@ -97,13 +97,13 @@ void reverse (LinkList  L)
 	//逆置L指针所指向的单链表
 	/********** Begin **********/ 
     LinkList p,q;
-    p = L->next;    //指针p指向第一个位置
-    L->next = NULL; //头结点的指针域为空
-    while(p)
+    p = L->next; //p为头指针的指针域
+    L->next = NULL; //头指针的指针域为NULL，因为刚开始一个结点都没有，故要初始化为空
+    while(p) //当p不为空时（有数据时）
     {
-        q = p; //q和p都指向第一个位置
-        p = p->next; //p指针往后移一位，这时就断开了p和L
-        q->next=L->next; //q指针指向的下一个结点=L指针指向的下一个结点即q指向p
+        q=p; //p和q都指向第一个位置
+        p=p->next; //p指向下一个位置
+        q->next=L->next; //q指向的下一个结点=L指向的下一个结点（q指向p）
         L->next = q; //L指向q
     }
 	/********** End **********/
