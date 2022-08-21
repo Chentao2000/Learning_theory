@@ -30,3 +30,4 @@ int GetTop(SqStack S,SElemType &e)
 }
 
 ```
+![1661084358337](https://user-images.githubusercontent.com/68007558/185790575-01af1c48-2b9c-4ca9-9e61-814c92aebd5d.png)
