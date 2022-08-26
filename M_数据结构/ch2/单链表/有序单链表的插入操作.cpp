@@ -110,17 +110,16 @@ int ListSortInsert (LinkList &L, ElemType e,int (*compare)(ElemType,ElemType))
     else
     {
 		q=L; //q为头结点
-		p=q->next; //p为第一个数
-		while(p!=NULL && comp(e,p->data)==1) //当p非空并且e的值大于p的值
+		p=q->next; //p指向第一个数
+		while(p!=NULL && compare(e,p->data)==1) //当p非空并且e的值大于p的值(就往下遍历)
         {
 			q=p; // q代替p的位置
 			p=p->next; //p指向下一个数
-		}
+		}//遍历完后
 		s->next=p; //s指向p
 		q->next=s; //q指向s
-		
+
 	}
 	return 1;  
 	/********** End **********/
 }
-
