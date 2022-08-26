@@ -137,19 +137,21 @@ int ListSortInsert (LinkList &L, ElemType e,int (*compare)(ElemType,ElemType))
 void ListDeleteSameNode(LinkList &L,int (*equals)(ElemType,ElemType) )
 {   // 在带头结点的有序单链线性表L中删除值相同的多余结点
 	/********** Begin **********/ 
-	LinkList p,q,pre; //q指针用来删除，pre为第一个指针
-	p=L; //p为头结点
-	while(p)
+    LinkList pre,p,q;
+    pre = L;
+    p = L->next;
+    while(p)
     {
-		pre=p; //pre为头结点 -> pre为第一个数
-		p=p->next; //p为第一个数 -> p为第二个数
-		if(p && equals(p->data,pre->data)==1) //如果p不为NULL而且p的值和pre的值相等
+        pre = p;
+        p = p->next;
+        if(p && equals(pre->data,p->data)==1)
         {
-			pre->next=p->next; //pre指向的下一个=p指向的下一个(为了删除p)
-			q=p; //用q代替p
-			p=pre; //p倒回去，p=pre
-			free(q); //释放q
-		}
-	}
+            pre->next = p->next;
+            q = p;
+            free(q);
+            p = pre;
+        }
+    }
 	/********** End **********/
 }
+
