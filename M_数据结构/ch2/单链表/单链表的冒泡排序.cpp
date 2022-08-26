@@ -107,9 +107,9 @@ void BubbleSort(LinkList L)   //单链表的冒泡排序算法
 		count++;//注释①
 		p = p->next;
 	}
-	for(i = 0; i < count - 1; i++)//外层循环，即趟数
+	for(i = 0; i < count - 1; i++)//外层循环，即趟数；由0开始并且最后一个数不用参与
 	{
-		num = count - i - 1;//记录内层循环需要的次数
+		num = count - i - 1;//记录内层循环需要的次数；count-i-1，也因为最后一个数不用参与
 		q = L->next;//令q指向第一个结点
 		p = q->next;//令p指向后一个结点
 		tail = L;//让tail始终指向q前一个结点，方便交换，也方便与进行下一步操作
