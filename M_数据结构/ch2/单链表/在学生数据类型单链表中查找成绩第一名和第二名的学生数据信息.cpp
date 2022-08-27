@@ -1,4 +1,4 @@
- #include <stdio.h>
+#include <stdio.h>
 #include<stdlib.h>
 #include<string.h>
 
@@ -132,11 +132,11 @@ void  FstAndSndValue(LinkList  L, void(*vi)(ElemType), int (*compare)(ElemType,E
     while(L)
     {
         i++; //每往下一个值位置就要+1
-        if(compare(L->data,one)>0) //当第二个结点大于第一个结点的值
+        if(compare(L->data,one)>0) //当第二个结点大于第一个结点的值;当L的值大于第一名
         {
-            two = one;  //two和one一样，都是第一个结点的值
-            b = a;  //b和a都为1
-            one = L -> data; //one就变为第二个结点的值
+            two = one;  //two和one一样，都是第一个结点的值;现在第二名变为原来第一名
+            b = a;  //b和a都为1; 现在第二名的位置变为原来第一名的位置
+            one = L -> data; //one就变为第二个结点的值;one就变为L的值
             a = i; //a（第一名的位置）就＋1
         }
         else if(compare(L->data,two)>0) //当L和第一名比较后还大于第二名
