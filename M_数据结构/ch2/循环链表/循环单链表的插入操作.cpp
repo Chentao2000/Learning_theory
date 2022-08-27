@@ -78,24 +78,28 @@ int ListInsert(LinkList &L,int i,int e)
 	// 在带头结点的循环单链表L的第i个元素之前插入元素e  
 	/********** Begin **********/ 
     int j=1;
-    LNnode *pre=L,*p=pre->next,*s;
-    if (i<=0) 
-        return 0;	
-    while (p!=L && j<i)	 //p!=L,因为是循环单链表，故，意为当p还没到最后
-    {	
-	    j++;
-	    pre=p;
-	    p=p->next;	
-    }
-    if (i>=j+1) 
+    LNnode *pre,*p,*s;
+    pre = L;
+    p = pre->next;
+    if(i<=0)
         return 0;
-    else				
-    {	
-	    s=(LNnode *)malloc(sizeof(LNnode));
-	    s->data=e;		
-	    s->next=pre->next;	
-	    pre->next=s;
-	    return 1;		
+    while(p!=L && j<i) //小细节（如果i超出了，j还是会走到最后）
+    {
+        j++; //（并且还会变为j+1）
+        pre=p;
+        p = p->next;
+    }
+    if(i>=j+1)  //（故等于j+1时就已经超出了，=号不能省）
+        return 0;
+    else
+    {
+        s=(LNnode*)malloc(sizeof(LNnode));
+        s->data = e;
+        s->next = pre->next;
+        pre->next = s;
+        return 1;
+    }
+
 	/********** End **********/
 }
 
