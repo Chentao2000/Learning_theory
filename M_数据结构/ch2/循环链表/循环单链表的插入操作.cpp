@@ -83,13 +83,13 @@ int ListInsert(LinkList &L,int i,int e)
     p = pre->next;
     if(i<=0)
         return 0;
-    while(p!=L && j<i) //小细节（如果i超出了，j还是会走到最后）
+    while(p!=L && j<i) //如果i超过表长，j还会一直加到最后一个结点，j最后会等于表长
     {
-        j++; //（并且还会变为j+1）
+        j++; 
         pre=p;
         p = p->next;
     }
-    if(i>=j+1)  //（故等于j+1时就已经超出了，=号不能省）
+    if(i>=j+1)  //参数i>n+1时错误返回0，即i大于等于表长+1就不行，因为是要在第i个元素前插入，前提是有元素
         return 0;
     else
     {
