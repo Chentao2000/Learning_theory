@@ -179,7 +179,7 @@ int Pop(SqStack &S,SElemType &e)
     /********** Begin **********/ 
 	if(S.top==S.base) //如果栈为空则返回0
         return ERROR;
-	e=*--S.top; //即 e = *S.top, s.top-- //栈顶元素用e返回，栈顶指针指回上一位
+	e=*--S.top; //即 e = *(S.top-1), s.top-- //栈顶元素用e返回，栈顶指针指回上一位
 	return OK;
     /********** End **********/ 	
 }
