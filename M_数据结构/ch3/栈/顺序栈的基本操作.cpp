@@ -161,12 +161,12 @@ void Push(SqStack &S,SElemType e)
 {     
 	// 插入元素e为新的栈顶元素
     /********** Begin **********/ 
-	if(S.top-S.base>=S.stacksize) 
+	if(S.top-S.base>=S.stacksize) //等于的时候就已经超出一格
 	{
      S.base=(SElemType *)realloc(S.base,(S.stacksize+STACKINCREMENT)*sizeof(SElemType)); // 栈满，追加存储空间STACKINCREMENT
      if(!S.base)
        exit(OVERFLOW); // 存储分配失败
-     S.top=S.base+S.stacksize; //栈顶指针 = 栈底指针+栈的当前存储空间
+     S.top=S.base+S.stacksize; //栈顶指针 = 栈底指针+栈的当前存储空间(比原来栈满的位置上一格)，因为空间已经扩大，故没问题
      S.stacksize+=STACKINCREMENT; //当前存储空间=原始当前存储空间+追加存储空间
 	}
    *(S.top)++=e;  //*S.top = e , S.top++ //栈顶元素设为e，栈顶指针指向下一位
