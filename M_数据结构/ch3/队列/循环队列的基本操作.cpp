@@ -159,9 +159,9 @@ int DeQueue(SqQueue &Q,QElemType &e)
 void QueueTraverse(SqQueue Q,void(*vi)(QElemType))
 { // 从队头到队尾依次对队列Q中每个元素调用函数vi()
    /********** Begin **********/ 
-   int i = Q.front;  //要求从队头开始
-   while((i + MAX_QSIZE) % MAX_QSIZE != Q.rear)  //当队头的下一个不指向队尾时（队列未满）
-   {
+   int i = Q.front;  //要求从队头开始，并且队尾上的数也要调用
+   while((i + MAX_QSIZE) % MAX_QSIZE != Q.rear)  //当队头不等于队尾的时候//并且因为下面是i++，为了确保逻辑上的环状，故要使用该公式
+   {					
       vi(Q.base[i]);
       i++;
    }
