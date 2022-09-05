@@ -117,6 +117,9 @@ int QueueLength(SqQueue Q)
    int i = 0;
    i = (Q.rear - Q.front + MAX_QSIZE) % MAX_QSIZE; 
    return i;
+	
+//+MAX_QSIZE:目的是防止rear - front < 0
+//%MAX_QSIZE:目的是防止当rear - front > 0时，又+ maxSize导致队列长度>maxSize
 
 	/********** End **********/  
  }
