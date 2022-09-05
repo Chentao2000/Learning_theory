@@ -21,7 +21,7 @@ int Match(char exp[],int n)	//exp存放表达式，n是表达式长度
                     Push(st,exp[i]); //把左括号存入栈
                     break; //存入一个就break，去switch外面i++，存下一个
             case ')':   
-                    if(!Pop(st,ch) || ch!='(') //如果出栈失败或不匹配
+                    if(!Pop(st,ch) || ch!='(') //如果出栈失败或不匹配----//！！注意，无论条件是否满足，pop()方法都会被执行
                         flag=0;
                     break;
             case ']':                              
